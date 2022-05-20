@@ -1,0 +1,55 @@
+@each $color, $value in $theme-colors {
+    .btn-#{$color},
+    .btn-outline-#{$color} {
+        &:hover,
+        &:active {
+            color: $white !important;
+        }
+        &:focus {
+            color: $value !important;
+        }
+    }
+    .btn-outline-white-#{$color} {
+        border: solid 1px $white !important;
+        color: $white !important;
+        background-color: transparent !important;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $white !important;
+            color: $value !important;
+            border-color: $white !important;
+        }
+    }
+    .btn-white-#{$color} {
+        border: solid 1px $white !important;
+        color: $value !important;
+        background-color: $white !important;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $value !important;
+            color: $white !important;
+            border-color: $white !important;
+        }
+    }
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus,
+a:active,
+input:active,
+textarea:active,
+button:active { outline: none !important; }
+a,
+button,
+input[type=button] { cursor: pointer; }
+
+@each $color, $value in $theme-colors {
+    .opacity-#{$color} {
+        color: $value !important;
+        background-color: rgba($value, .15) !important;
+    }
+}

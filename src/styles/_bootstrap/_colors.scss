@@ -1,0 +1,23 @@
+@each $color, $value in $theme-colors {
+    .bg-hover-#{$color}:hover,
+    .bg-hover-#{$color}:focus,
+    .bg-hover-#{$color}:active {
+        background-color: $value !important;
+    }
+    .border-hover-#{$color}:hover,
+    .border-hover-#{$color}:focus,
+    .border-hover-#{$color}:active {
+        border-color: $value !important;
+    }
+    .fill-#{$color} {
+        fill: $value !important;
+    }
+    a.text-hover-#{$color}:hover,
+    .text-hover-#{$color}:hover,
+    a.text-hover-#{$color}:focus,
+    .text-hover-#{$color}:focus,
+    a.text-hover-#{$color}:active,
+    .text-hover-#{$color}:active {
+        color: $value !important;
+    }
+}
