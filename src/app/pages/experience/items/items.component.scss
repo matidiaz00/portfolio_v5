@@ -1,0 +1,21 @@
+@import "~src/styles/variables";
+
+$floatItemsHeight: 122px;
+
+$wrapperPadding: 2rem; //p-4
+$circleRatio: 53px;
+
+::ng-deep .float-items {
+    position: absolute;
+    margin-top: calc(0px - #{$floatItemsHeight} - #{$wrapperPadding} + #{calc($circleRatio/2)});
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    .circles {
+        span {
+            width: $circleRatio;
+            height: $circleRatio;
+        }
+    }
+}

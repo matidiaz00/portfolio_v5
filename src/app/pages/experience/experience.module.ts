@@ -9,9 +9,11 @@ const Modules = [
 ]
 
 import { ExperienceComponent } from './experience.component';
+import { ExperienceItemsComponent } from './items/items.component';
 
 const Components = [
-    ExperienceComponent
+    ExperienceComponent,
+    ExperienceItemsComponent
 ]
 
 @NgModule({
