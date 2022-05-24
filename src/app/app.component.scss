@@ -1,0 +1,12 @@
+::ng-deep {
+    #app > * {
+        height: 100%;
+    }
+
+    #app > app-header,
+    #app > router-outlet {
+        height: auto;
+    }
+}
+
+:host {}
