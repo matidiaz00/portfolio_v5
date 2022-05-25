@@ -12,3 +12,12 @@
 .cursor-pointer {
     cursor: pointer !important;
 }
+
+@media (hover: hover) and (pointer: fine) {
+    *:hover,
+    *:focus,
+    *:active {
+        color: inherit !important;
+        background-color: inherit !important;
+    }
+}
