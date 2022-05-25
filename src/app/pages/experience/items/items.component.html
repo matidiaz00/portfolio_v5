@@ -1,9 +1,13 @@
 <div class="float-items">
     <div class="d-flex flex-column align-items-center w-100">
-        <span class="rounded border px-3 py-1 mx-auto mb-3">2010 / Actualidad</span>
+        <span
+            [ngClass]="active ? 'border-primary bg-primary text-white' : 'border-light-dark text-light-dark'"
+            class="rounded border px-3 py-1 mx-auto mb-2 small font-weight-bold"
+        >2010 / Actualidad</span>
         <div class="circles d-flex align-items-center">
-            <span class="bg-primary rounded-circle"></span>
+            <span *ngIf="active" class="bg-primary rounded-circle"></span>
+            <span *ngIf="!active" class="bg-light rounded-circle"></span>
         </div>
     </div>
 </div>
-<app-main-box></app-main-box>
+<app-main-box class="mt-2 d-block" [active]="active"></app-main-box>

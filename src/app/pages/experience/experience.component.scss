@@ -1,20 +1,10 @@
 @import "~src/styles/variables";
 
-$floatItemsHeight: 122px;
 $lineHeight: 13px;
 
 ::ng-deep #experience {
-    #list {
-        > div {
-            position: relative;
-            margin-top: $floatItemsHeight;
-        }
-        #line {
-            height: $lineHeight;
-            margin-top: - calc($lineHeight / 2);
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
+    #list > div {
+        border-top: 13px solid $secondary;
+        margin-top: $experienceFloatItemsHeight;
     }
 }

@@ -17,20 +17,28 @@ import { MobileModalComponent } from './components/mobile-modal/mobile-modal.com
 import { MobileNavComponent } from './components/mobile-nav/mobile-nav.component';
 
 const Components = [
-    HeaderComponent,
-    MainBoxComponent,
-    MobileModalComponent,
-    MobileNavComponent
+  HeaderComponent,
+  MainBoxComponent,
+  MobileModalComponent,
+  MobileNavComponent
 ];
+
+import { HorizontalScrollDirective } from './directives/horizontalScroll.directive';
+
+const Directives = [
+  HorizontalScrollDirective
+]
 
 @NgModule({
   imports: [
     Modules,
   ],
   declarations: [
+    Directives,
     Components,
   ],
   exports: [
+    Directives,
     Modules,
     Components,
   ],

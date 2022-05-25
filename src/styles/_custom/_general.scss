@@ -1,3 +1,11 @@
 .reset-underline {
     text-decoration: none !important;
 }
+.scroll-x {
+    overflow-x: scroll;
+    scrollbar-width: none; // hide scrollbar in Firefox
+    &::-webkit-scrollbar {
+        display: none; // hide scrollbar in Chromium
+    }
+    overflow-y: hidden;
+}
