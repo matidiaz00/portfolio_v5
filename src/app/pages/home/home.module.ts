@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 
 import { HomeRouting } from './home.routing';
 import { SharedModule } from './../../shared/shared.module';
@@ -19,5 +19,6 @@ const Components = [
     declarations: [ Components ],
     exports: [],
     providers: [],
+    schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class HomeModule { }

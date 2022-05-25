@@ -32,6 +32,6 @@ const Services: Provider = [
   declarations:     [ AppComponent ],
   imports:          [ Modules ],
   providers:        [ Services ],
-  bootstrap:        [ AppComponent ],
+  bootstrap:        [ AppComponent ]
 })
 export class AppModule { }
