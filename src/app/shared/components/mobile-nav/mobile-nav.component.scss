@@ -1,0 +1,13 @@
+@import "~src/styles/variables";
+
+$iconsRatio: 60px;
+
+::ng-deep #mobile-nav {
+    .btn {
+        min-width: $iconsRatio;
+        height: $iconsRatio;
+    }
+    .small {
+        margin-top: 2px;
+    }
+}
