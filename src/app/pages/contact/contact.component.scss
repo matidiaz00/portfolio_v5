@@ -1,0 +1,15 @@
+@import "~src/styles/variables";
+
+::ng-deep #contact {
+    nav a {
+        min-width: 120px;
+        &:hover app-dribble,
+        &:hover app-email,
+        &:hover app-github,
+        &:hover app-linkedin {
+            svg path {
+                fill: $white
+            }
+        }
+    }
+}
