@@ -2,13 +2,28 @@
 
 ::ng-deep #contact {
     nav a {
-        min-width: 120px;
-        &:hover app-dribble,
-        &:hover app-email,
-        &:hover app-github,
-        &:hover app-linkedin {
+        min-width: 115px;
+        transition: all 100ms ease-in-out;
+        app-dribble,
+        app-email,
+        app-github,
+        app-linkedin {
             svg path {
-                fill: $white
+                fill: $light-dark;
+                transition: fill 100ms ease-in-out;
+            }
+        }
+        &:visited:hover,
+        &:active,
+        &:focus,
+        &:hover {
+            app-dribble,
+            app-email,
+            app-github,
+            app-linkedin {
+                svg path {
+                    fill: $white
+                }
             }
         }
     }

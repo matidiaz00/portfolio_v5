@@ -1,4 +1,6 @@
 @import "./variables";
 @import "./mixins";
 
-$enable-gradients: false;
+.badge {
+    line-height: 1.5rem !important;
+}
