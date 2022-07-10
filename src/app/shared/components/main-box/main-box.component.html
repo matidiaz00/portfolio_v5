@@ -6,20 +6,12 @@
             'bg-white text-light-dark text-hover-dark'
         "
     >
-        <h4 class="h5">Progressive web APP</h4>
-        <p class="h6 font-weight-normal">Frontend developer</p>
-        <div 
-            [ngClass]="active ? 'bg-white text-primary' : 'bg-light'"
-            class="icon rounded-circle d-flex align-items-center justify-content-center mx-auto"
-        >
-            <span *ngIf="!active" class="material-symbols-rounded h6 m-0">question_mark</span>
-            <span *ngIf="active" class="material-symbols-rounded h6 m-0">close</span>
-        </div>
+        <ng-content></ng-content>
     </div>
     <div class="description bg-white p-4 rounded small ml-n4" *ngIf="active">
         <div class="pl-4">
             <p class="mb-1"><strong>Descripción</strong></p>
-            <p class="mb-0">Uso de server-side rendering (SSR) y prerender con Angular, para mejoras de performance y SEO.</p>
+            <p class="mb-0">{{ description }}</p>
         </div>
     </div>
 </div>

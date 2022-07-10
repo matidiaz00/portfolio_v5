@@ -1,10 +1,12 @@
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 const AngularModules = [
   CommonModule,
-  RouterModule
+  RouterModule,
+  HttpClientModule
 ];
 
 const Modules = [

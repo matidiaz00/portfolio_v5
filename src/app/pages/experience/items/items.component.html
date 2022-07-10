@@ -13,4 +13,14 @@
         </div>
     </div>
 </div>
-<app-main-box class="mt-2 d-block cursor-pointer" [active]="active"></app-main-box>
+<app-main-box class="mt-2 d-block cursor-pointer" [active]="active" [description]="'asd'">
+    <h4 class="h5">Titulo</h4>
+    <p class="h6 font-weight-normal">Frontend developer</p>
+    <div 
+        [ngClass]="active ? 'bg-white text-primary' : 'bg-light'"
+        class="icon rounded-circle d-flex align-items-center justify-content-center mx-auto"
+    >
+        <span *ngIf="!active" class="material-symbols-rounded h6 m-0">question_mark</span>
+        <span *ngIf="active" class="material-symbols-rounded h6 m-0">close</span>
+    </div>
+</app-main-box>
