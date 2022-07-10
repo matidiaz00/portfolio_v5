@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  location: "localhost:4200"
+  location: "localhost:4200",
+  api_endpoint: "https://us-central1-matidiaz-f3c64.cloudfunctions.net/api"
 };
 
 /*

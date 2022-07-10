@@ -10,4 +10,7 @@ export class MainBoxComponent {
   @Input()
   active: boolean = false;
 
+  @Input()
+  description: string = '';
+
 }

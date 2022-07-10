@@ -9,9 +9,11 @@ const Modules = [
 ]
 
 import { AbilitiesComponent } from './abilities.component';
+import { AbilitiesMainBoxComponent } from './main-box/main-box.component';
 
 const Components = [
-    AbilitiesComponent
+    AbilitiesComponent,
+    AbilitiesMainBoxComponent
 ]
 
 @NgModule({
