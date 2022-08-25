@@ -1,4 +1,4 @@
-import { NgModule, Provider } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 import { Modules, Bootstrap } from './app.config';
 

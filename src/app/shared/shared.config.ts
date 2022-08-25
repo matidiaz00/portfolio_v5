@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
-const AngularModules = [
+export const AngularModules = [
   CommonModule,
   RouterModule,
   HttpClientModule

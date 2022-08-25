@@ -18,8 +18,6 @@ const Components = [
 
 @NgModule({
     imports: [ Modules ],
-    declarations: [ Components ],
-    exports: [],
-    providers: [],
+    declarations: [ Components ]
 })
 export class ExperienceModule { }

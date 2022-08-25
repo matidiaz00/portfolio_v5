@@ -5,9 +5,11 @@ const AngularModules = [
 ]
 
 import { PagesModule } from './pages/pages.module';
+import { SharedModule } from './shared/shared.module';
 
 export const Modules = [
   AngularModules,
+  SharedModule,
   PagesModule
 ]
 

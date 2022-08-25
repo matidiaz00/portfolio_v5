@@ -10,9 +10,11 @@ export const PagesModules = [
     ExperienceModule
 ]
 
-import { SharedModule } from "./../shared/shared.module"
+import { AngularModules } from "./../shared/shared.config"
+import { PagesRoutingModule } from './pages.routing';
 
 export const Modules = [
-	SharedModule,
+	AngularModules,
+    PagesRoutingModule,
     PagesModules
 ];
