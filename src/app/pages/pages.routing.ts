@@ -3,11 +3,6 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 const routes: Routes = [
     {
-        path: "",
-        redirectTo: "inicio",
-        pathMatch: "full"
-    },
-    {
         path: "inicio",
         loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
     },
@@ -22,6 +17,11 @@ const routes: Routes = [
     {
         path: 'experiencia',
         loadChildren: () => import('./experience/experience.module').then(m => m.ExperienceModule)
+    },
+    {
+        path: "",
+        redirectTo: "inicio",
+        pathMatch: "full"
     },
     {
         path: '**',

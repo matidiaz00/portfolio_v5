@@ -1,37 +1,10 @@
 import { NgModule, Provider } from '@angular/core';
-import { AppComponent } from './app.component';
 
-import { BrowserModule } from '@angular/platform-browser';
-
-const AngularModules = [
-  BrowserModule
-]
-
-import { SharedModule } from './shared/shared.module';
-import { PagesRoutingModule } from './pages/pages.routing';
-import { PagesModule } from './pages/pages.module';
-
-const Modules = [
-  AngularModules,
-  SharedModule,
-  PagesRoutingModule,
-  PagesModule
-]
-
-const Services: Provider = [
-  /*
-  {
-    provide: HTTP_INTERCEPTORS,
-    useClass: APIInterceptor,
-    multi: true
-  },
-  */
-];
+import { Modules, Bootstrap } from './app.config';
 
 @NgModule({
-  declarations:     [ AppComponent ],
+  declarations:     [ Bootstrap ],
   imports:          [ Modules ],
-  providers:        [ Services ],
-  bootstrap:        [ AppComponent ]
+  bootstrap:        [ Bootstrap ]
 })
 export class AppModule { }

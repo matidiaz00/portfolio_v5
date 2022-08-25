@@ -42,5 +42,8 @@ testem.log
 Thumbs.db
 
 
+.firebase
 .vscode
 .angular
+package-lock.json
+.firebaserc
