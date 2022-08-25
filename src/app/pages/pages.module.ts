@@ -1,31 +1,10 @@
-import { NgModule } from "@angular/core"
-import { SharedModule } from "./../shared/shared.module"
-
-const Modules = [
-	SharedModule,
-];
-
-import { HomeModule } from './home/home.module';
-import { AbilitiesModule } from './abilities/abilities.module';
-import { ContactModule } from './contact/contact.module';
-import { ExperienceModule } from './experience/experience.module';
-
-const PagesModules = [
-    HomeModule,
-    AbilitiesModule,
-    ContactModule,
-    ExperienceModule
-]
+import { NgModule } from '@angular/core';
+import { Modules, PagesModules } from "./pages.config";
 
 @NgModule({
-  imports: [
-    Modules,
-    PagesModules,
-  ],
+  imports:      [ Modules ],
   declarations: [],
-  exports: [
-    PagesModules
-  ],
-  providers: [],
+  exports:      [ PagesModules ],
+  providers:    [],
 })
 export class PagesModule { }

@@ -3,11 +3,6 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 const routes: Routes = [
     {
-        path: "",
-        redirectTo: "inicio",
-        pathMatch: "full"
-    },
-    {
         path: "inicio",
         loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
     },
@@ -24,6 +19,11 @@ const routes: Routes = [
         loadChildren: () => import('./experience/experience.module').then(m => m.ExperienceModule)
     },
     {
+        path: "",
+        redirectTo: "inicio",
+        pathMatch: "full"
+    },
+    {
         path: '**',
         loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
     }
@@ -32,9 +32,7 @@ const routes: Routes = [
 @NgModule({
     imports: [
         RouterModule.forRoot(routes, {
-            preloadingStrategy: PreloadAllModules,
-            initialNavigation: 'enabled',
-            relativeLinkResolution: 'legacy'
+            preloadingStrategy: PreloadAllModules
         })
     ],
     exports: [RouterModule]

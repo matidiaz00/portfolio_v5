@@ -17,8 +17,6 @@ const Components = [
 @NgModule({
     imports: [ Modules ],
     declarations: [ Components ],
-    exports: [],
-    providers: [],
     schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class HomeModule { }
